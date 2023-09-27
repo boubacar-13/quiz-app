@@ -1,18 +1,9 @@
+<a routerLink="/home">Retour à l'accueil</a>
 <section>
-  <a routerLink="/home">Retour à l'accueil</a>
-  <h1>Quiz Party !</h1>
-  <div *ngFor="let item of quizContent" class="questionContainer">
-    <h4 class="questionTitle">{{ item.id + ") " + item.question }}</h4>
-    <ul>
-      <li *ngFor="let i of item.props">
-        <button (click)="checkAnswer(item, i)">
-          {{ i }}
-        </button>
-      </li>
-    </ul>
-    <p>Réponse : {{ textResult }}</p>
-  </div>
-</section>
-<section>
-  <h2>Résultat : {{ finalResult }}/10</h2>
+  <app-question
+    [content]="quizContent"
+    [checkingAnswer]="checkAnswer"
+    [textResult]="textResult"
+    [finalResult]="finalResult"
+  ></app-question>
 </section>

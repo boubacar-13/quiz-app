@@ -1,1 +1,17 @@
-<p>question works!</p>
+<section>
+  <h1>Quiz Party !</h1>
+  <div *ngFor="let item of content" class="questionContainer">
+    <h4 class="questionTitle">{{ item.id + ") " + item.question }}</h4>
+    <ul>
+      <li *ngFor="let i of item.props">
+        <button (click)="checkingAnswer(item, i)">
+          {{ i }}
+        </button>
+      </li>
+    </ul>
+    <p>Réponse : {{ textResult }}</p>
+  </div>
+</section>
+<section>
+  <h2>Résultat : {{ finalResult }}/10</h2>
+</section>

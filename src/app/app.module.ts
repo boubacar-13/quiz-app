@@ -12,6 +12,8 @@ import { QuizComponent } from './quiz/quiz.component';
 import { HttpClientModule } from '@angular/common/http';
 import { QuestionComponent } from './question/question.component';
 import { AnswerComponent } from './answer/answer.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ConnexionComponent } from './connexion/connexion.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,7 @@ import { AnswerComponent } from './answer/answer.component';
     QuizComponent,
     QuestionComponent,
     AnswerComponent,
+    ConnexionComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,6 +32,8 @@ import { AnswerComponent } from './answer/answer.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
