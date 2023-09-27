@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+}
+* {
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+}
+button {
+  cursor: pointer;
+}
+.questionContainer {
+  border-radius: 10px;
+  border: 1px black solid;
+  margin: 1em;
+}
+button {
+  width: 10vw;
+  margin: 0 auto 1rem;
+}
