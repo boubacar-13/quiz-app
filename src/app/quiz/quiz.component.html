@@ -1,4 +1,5 @@
 <section>
+  <a routerLink="/home">Retour à l'accueil</a>
   <h1>Quiz Party !</h1>
   <div *ngFor="let item of quizContent" class="questionContainer">
     <h4 class="questionTitle">{{ item.id + ") " + item.question }}</h4>
@@ -7,11 +8,10 @@
         <button (click)="checkAnswer(item, i)">
           {{ i }}
         </button>
-        <button mat-raised-button color="primary">{{ i }}</button>
       </li>
     </ul>
+    <p>Réponse : {{ textResult }}</p>
   </div>
-  <p>{{ textResult }}</p>
 </section>
 <section>
   <h2>Résultat : {{ finalResult }}/10</h2>

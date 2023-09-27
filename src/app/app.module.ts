@@ -9,14 +9,26 @@ import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { QuizComponent } from './quiz/quiz.component';
+import { HttpClientModule } from '@angular/common/http';
+import { QuestionComponent } from './question/question.component';
+import { AnswerComponent } from './answer/answer.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, HeaderComponent, FooterComponent, QuizComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    HeaderComponent,
+    FooterComponent,
+    QuizComponent,
+    QuestionComponent,
+    AnswerComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
